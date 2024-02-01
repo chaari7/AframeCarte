@@ -8,18 +8,24 @@
         <a-scene embedded arjs>
         <a-marker preset="hiro">
             <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
-            <a-entity
+            <a-entity             
             rotation="0 45 0"
-            position="0 0 -2"
-            scale="0.2 0.2 0.2"
+            position="0 -2 0"
+            >
+            <a-entity
+
+
             gltf-model="./assets/Avatar_YnesCHAARI.gltf"
             animation-mixer repeat Infinity
 
-            ></a-entity>
+            >
+            </a-entity>
+        <a-video src="./assets/Logo.mp4" autoplay loop="true" width="3" height="2" position="2 2 -8"></a-video>
         </a-marker>
-                        <a-video src="./assets/Logo.mp4" width="3" height="2" position="2 2 -8"></a-video>
+        </a-entity>
+        <a-camera position="0 0 10"></a-camera>
+                                              
 
-        <a-entity camera></a-entity>
 
         </a-scene>
     </body>
